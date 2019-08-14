@@ -1,7 +1,7 @@
 {
-  "name": "EleventyOne",
-  "version": "3.0.0",
-  "description": "A project bootstrap for Eleventy sites. With pipelines for PostCSS, JavaScript, and serverless functions",
+  "name": "eleventy-example-google-sheets-data",
+  "version": "0.0.1",
+  "description": "An example of sourcing data from Google Sheets for use in Eleventy at build time",
   "author": "Phil Hawksworth",
   "license": "MIT",
   "scripts": {
@@ -16,11 +16,9 @@
   },
   "dependencies": {
     "@11ty/eleventy": "^0.8.3",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
     "autoprefixer": "^9.6.0",
     "axios": "^0.19.0",
     "cssnano": "^4.1.10",
-    "dotenv": "^8.0.0",
     "html-minifier": "^4.0.0"
   },
   "devDependencies": {

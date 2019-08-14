@@ -11,22 +11,28 @@ const googleSheetUrl = `https://spreadsheets.google.com/feeds/list/${sheetID}/od
 
 module.exports = () => {
   return new Promise((resolve, reject) => {
+
+    console.log(`Requesting data from ${googleSheetUrl}`);
+
     axios.get(googleSheetUrl)
       .then(response => {
 
         // massage the data from the Google Sheets API into
         // a shape that will more convenient for us in our SSG.
-        var data = [];
+        var data = {
+          "East": [],
+          "West": []
+        };
         response.data.feed.entry.forEach(item => {
-          data.push({
+          data[item.gsx$conference.$t].push({
             "name": item.gsx$name.$t,
-            "number": item.gsx$number.$t
-          });
+            "team": item.gsx$team.$t
+          })
         });
 
         // stash the data locally for developing without
         // needing to hit the API each time.
-        seed(JSON.stringify(data), `${__dirname}/../dev/sheet.json`)
+        seed(JSON.stringify(data), `${__dirname}/../dev/sheet.json`);
 
         // resolve the promise and return the data
         resolve(data);

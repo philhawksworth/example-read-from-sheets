@@ -1,16 +1,35 @@
 ---
-title: EleventyOne
-subtitle: A project scaffold for getting building with Eleventy quickly.<br /> Made by <a href="https://twitter.com/philhawksworth">Phil</a> for <a href="https://twitter.com/philhawksworth">Phil</a>, but perhaps you might also find it useful.
+title: Eleventy Example - Google Sheets data feed
 layout: default
 ---
 
 
-## Links from an external data source
+## Content from an external data source
 
-These links were sourced from [hawksworx.com](https://www.hawksworx.com/feed.json) at build time.
+The list below was sourced from [a Google Sheet](https://docs.google.com/spreadsheets/d/1CfI6XGm9OjjNKGr3kXRSKVLui_gkHZdadoOPIiNgE9s/edit#gid=0) as JSON at site build time.
 
+### Eastern Conference All Stars
 <ul class="listing">
-{%- for item in sheet -%}
-  <li>{{ item.name }} - {{ item.number }}</li>
+{%- for item in sheet.East -%}
+  <li>{{ item.name }} - {{ item.team }}</li>
 {%- endfor -%}
 </ul>
+
+### Western Conference All Stars
+<ul class="listing">
+{%- for item in sheet.West -%}
+  <li>{{ item.name }} - {{ item.team }}</li>
+{%- endfor -%}
+</ul>
+
+
+## About this example
+
+This site is an example of using [Eleventy's JavaScript Data Files](https://www.11ty.io/docs/data-js/) which simplify pulling content from remote data sources and making them available as  objects to be used globally across and Eleventy site.
+
+- This page is pulling content from a read-only Google Sheets feed.
+- The code is available to inspect on GitHub and more information is available from the ReadMe.
+- You can also clone the repo and deploy your own version of the site to Netlify for free all in a couple of clicks by hitting the button below 👇
+
+
+

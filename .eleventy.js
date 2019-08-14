@@ -1,5 +1,4 @@
 
-
 module.exports = function(config) {
 
   // A useful way to reference the context we are runing eleventy in
@@ -11,6 +10,8 @@ module.exports = function(config) {
   // minify the html output
   config.addTransform("htmlmin", require("./src/utils/minify-html.js"));
 
+  // use a filter for simple css minification
+  config.addFilter("cssmin", require("./src/utils/minify-css.js"))
 
 
   // make the seed target act like prod
