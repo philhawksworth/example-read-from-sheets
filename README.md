@@ -35,6 +35,7 @@ There are a couple of steps required to expose the content from your Google Shee
 3. After creating you sheet, you need to publish it to the web. Do this from the **File menu in Google Sheets. Select the option to publish the sheet as a web page.
 4. Check that you can now access the JSON feed of the sheet, using your Sheet ID in a URL using this convention:
    - `https://spreadsheets.google.com/feeds/list/{SHEET_ID}/od6/public/values?alt=json`;
+5. Specify the Sheet ID to be used when constructing the request URL in [`/src/site/_data/prod/sheet.js`](/blob/master/src/site/_data/prod/sheet.js#L8)
 
 ## Local development
 
