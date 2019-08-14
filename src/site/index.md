@@ -1,5 +1,5 @@
 ---
-title: Eleventy Example - Google Sheets data feed
+title: Google Sheets data feed example. With Eleventy.
 layout: default
 ---
 
