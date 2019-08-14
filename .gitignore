@@ -1,9 +1,10 @@
-# dependencies installed by npm
+# dependencies installed by npm or yarn
 /node_modules
 
 # build artefacts
 /dist
 /src/site/_includes/css
+/src/site/_data/dev/*
 
 # secrets and errors
 .env
