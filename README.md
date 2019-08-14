@@ -2,9 +2,9 @@
 
 # Read from Google Sheets API with Eleventy
 
-Example site: https://read-from-google-sheets.netlify.com/
+> Example site: https://read-from-google-sheets.netlify.com/
 
-This site is an example of using [Eleventy's JavaScript Data Files](https://www.11ty.io/docs/data-js/) which simplify pulling content from remote data sources and making them available as  objects to be used globally across and Eleventy site.
+This site is an example of using [Eleventy's JavaScript Data Files](https://www.11ty.io/docs/data-js/) which simplify sourcing content from remote data sources and making them available as  objects to use globally across an Eleventy site.
 
 The site is pulling content from a read-only Google Sheets feed at build time.
 
