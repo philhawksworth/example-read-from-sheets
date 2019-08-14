@@ -6,8 +6,7 @@
 
  This site is an example of using [Eleventy's JavaScript Data Files](https://www.11ty.io/docs/data-js/) which simplify pulling content from remote data sources and making them available as  objects to be used globally across and Eleventy site.
 
-- The site is pulling content from a read-only Google Sheets feed at build time.
-- You can also clone the repo and deploy your own version of the site to Netlify for free all in a couple of clicks by hitting the button below 👇
+The site is pulling content from a read-only Google Sheets feed at build time.
 
 
 ## Instructions
@@ -33,7 +32,7 @@ There are a couple of steps required to expose the content from your Google Shee
 2. You'll use the unique ID of the sheet from its URL to address it later.
     - For example: `https://docs.google.com/spreadsheets/d/1CfI6XGm9OjjNKGr3kXRSKVLui_gkHZdadoOPIiNgE9s/edit#gid=0`
     - Where: `https://docs.google.com/spreadsheets/d/{SHEET_ID}/edit#gid=0`
-3. After creating you sheet, you need to publish it to the web. Do this from the `File` menu in Google Sheets. Select the option to publish the sheet as a web page.
+3. After creating you sheet, you need to publish it to the web. Do this from the **File** menu in Google Sheets. Select the option to publish the sheet as a web page.
 4. Check that you can now access the JSON feed of the sheet, using your Sheet ID in a URL using this convention:
    - `https://spreadsheets.google.com/feeds/list/{SHEET_ID}/od6/public/values?alt=json`;
 

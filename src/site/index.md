@@ -28,7 +28,7 @@ The lists below showing NBA AllStar starting fives for 2019 were sourced from [a
 
 ## About this example
 
-This site is an example of using [Eleventy's JavaScript Data Files](https://www.11ty.io/docs/data-js/) which simplify pulling content from remote data sources and making them available as  objects to be used globally across and Eleventy site.
+This site is an example of using [Eleventy's JavaScript Data Files](https://www.11ty.io/docs/data-js/) which simplify pulling content from remote data sources and making them available as  objects to be used globally across an Eleventy site.
 
 - This page is pulling content from a read-only [Google Sheets feed](https://spreadsheets.google.com/feeds/list/1CfI6XGm9OjjNKGr3kXRSKVLui_gkHZdadoOPIiNgE9s/od6/public/values?alt=json).
 - The [code is available to inspect on GitHub]({{ pkg.repository.url}}) and more information is available from the [ReadMe]({{ pkg.repository.url}}/blob/master/README.md).
