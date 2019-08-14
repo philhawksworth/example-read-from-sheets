@@ -32,4 +32,9 @@ This site is an example of using [Eleventy's JavaScript Data Files](https://www.
 - You can also clone the repo and deploy your own version of the site to Netlify for free all in a couple of clicks by hitting the button below 👇
 
 
+## Clone and deploy!
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/philhawksworth/example-read-from-sheets)
+
+
 
