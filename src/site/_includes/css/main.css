@@ -74,6 +74,7 @@ a:visited {
   color: #ff8c00;
   text-decoration: none;
   border-bottom: solid 1px #ffdcb2;
+  white-space: nowrap;
 }
 a:hover,
 a:focus {

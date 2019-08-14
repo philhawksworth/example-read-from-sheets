@@ -8,7 +8,6 @@ layout: default
 
 The lists below showing NBA AllStar starting fives for 2019 were sourced from [a Google Sheet](https://docs.google.com/spreadsheets/d/1CfI6XGm9OjjNKGr3kXRSKVLui_gkHZdadoOPIiNgE9s/edit#gid=0) as JSON at site build time.
 
-<hr />
 
 ### Eastern Conference All Stars
 <ul class="listing">
@@ -24,7 +23,6 @@ The lists below showing NBA AllStar starting fives for 2019 were sourced from [a
 {%- endfor -%}
 </ul>
 
-<hr />
 
 
 
@@ -36,7 +34,6 @@ This site is an example of using [Eleventy's JavaScript Data Files](https://www.
 - The [code is available to inspect on GitHub](/blob/master/README.md) and more information is available from the [ReadMe]({{ pkg.repository.url}}/blob/master/README.md).
 - You can also clone [the repo](/blob/master/README.md) and deploy your own version of the site to [Netlify](https://www.netlify.com) for free all in a couple of clicks by hitting the button below. That one down there. 👇
 
-----
 
 ## Clone and deploy!
 
