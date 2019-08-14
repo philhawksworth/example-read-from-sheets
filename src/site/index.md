@@ -6,7 +6,9 @@ layout: default
 
 ## Content from an external data source
 
-The list below was sourced from [a Google Sheet](https://docs.google.com/spreadsheets/d/1CfI6XGm9OjjNKGr3kXRSKVLui_gkHZdadoOPIiNgE9s/edit#gid=0) as JSON at site build time.
+The lists below showing NBA AllStar starting fives for 2019 were sourced from [a Google Sheet](https://docs.google.com/spreadsheets/d/1CfI6XGm9OjjNKGr3kXRSKVLui_gkHZdadoOPIiNgE9s/edit#gid=0) as JSON at site build time.
+
+<hr />
 
 ### Eastern Conference All Stars
 <ul class="listing">
@@ -22,15 +24,19 @@ The list below was sourced from [a Google Sheet](https://docs.google.com/spreads
 {%- endfor -%}
 </ul>
 
+<hr />
+
+
 
 ## About this example
 
 This site is an example of using [Eleventy's JavaScript Data Files](https://www.11ty.io/docs/data-js/) which simplify pulling content from remote data sources and making them available as  objects to be used globally across and Eleventy site.
 
-- This page is pulling content from a read-only Google Sheets feed.
-- The code is available to inspect on GitHub and more information is available from the ReadMe.
-- You can also clone the repo and deploy your own version of the site to Netlify for free all in a couple of clicks by hitting the button below 👇
+- This page is pulling content from a read-only [Google Sheets feed](https://spreadsheets.google.com/feeds/list/1CfI6XGm9OjjNKGr3kXRSKVLui_gkHZdadoOPIiNgE9s/od6/public/values?alt=json).
+- The [code is available to inspect on GitHub](/blob/master/README.md) and more information is available from the [ReadMe]({{ pkg.repository.url}}/blob/master/README.md).
+- You can also clone [the repo](/blob/master/README.md) and deploy your own version of the site to [Netlify](https://www.netlify.com) for free all in a couple of clicks by hitting the button below. That one down there. 👇
 
+----
 
 ## Clone and deploy!
 
